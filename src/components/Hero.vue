@@ -152,8 +152,8 @@ onMounted(() => {
         <div
           class="floating-badge badge-2 animate-float delay-200"
           style="cursor: pointer"
-          @click="openWebsite('https://bun.sh')">
-          <span>⚡</span> Bun.js
+          @click="openWebsite('https://gofiber.io')">
+          <span>🧊</span> Fiber (Go)
         </div>
         <div
           class="floating-badge badge-3 animate-float delay-400"
