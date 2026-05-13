@@ -32,7 +32,17 @@ const skills = [
   {
     category: "DevOps",
     icon: "🚀",
-    items: ["Docker", "AWS", "Nginx", "Certbot", "Linux"],
+    items: ["Docker", "AWS", "Nginx", "Certbot", "Linux", "Tencent Cloud"],
+  },
+  {
+    category: "A.I. Tools",
+    icon: "🤖",
+    items: ["Claude", "Codex", "GitHub Copilot"],
+  },
+  {
+    category: "Special Interest",
+    icon: "🧩",
+    items: ["Golang", "Kotlin", "Rust", "Python"],
   },
 ];
 
@@ -54,26 +64,34 @@ const stats = [
       <div class="about-content">
         <div class="about-text">
           <div class="about-card glass-card">
+            <div>
             <h3>Who I Am</h3>
             <p>
               I'm a Full Stack Developer with 3+ years of experience
-              specializing in Java Spring Boot, Express, and Elysia. Proven
+              specializing VueJs, NodeJs, ExpressJs, and ElysiaJs. Proven
               expertise in developing secure Fintech solutions, Payment Gateway
               integrations, and complex School ERP systems.
             </p>
+            <div class="ab"/>
             <p>
               Proficient in building high-performance applications with Vue.js
               and managing scalable cloud infrastructure via AWS <br />(EC2,
               Lightsail, S3, SES).
             </p>
+            <div class="ab"/>
+            </div>
             <div class="about-highlights">
               <div class="highlight">
-                <span class="highlight-icon">✨</span>
+                <span class="highlight-icon">🧹</span>
                 <span>Clean Code Advocate</span>
               </div>
               <div class="highlight">
                 <span class="highlight-icon">🎯</span>
                 <span>Problem Solver</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">🔥</span>
+                <span>Performance Optimizer</span>
               </div>
               <div class="highlight">
                 <span class="highlight-icon">🤝</span>
@@ -124,6 +142,9 @@ const stats = [
 }
 
 .about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: var(--space-8);
   height: 100%;
 }
@@ -246,5 +267,10 @@ const stats = [
   .stat-value {
     font-size: var(--font-size-3xl);
   }
+}
+.ab {
+  border-bottom: 1px solid var(--color-border);
+  margin-top: var(--space-6); 
+  margin-bottom: var(--space-6); 
 }
 </style>
